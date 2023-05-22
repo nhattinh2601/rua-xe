@@ -17,7 +17,7 @@ import org.springframework.security.access.prepost.PreAuthorize;
 import org.springframework.security.authentication.AuthenticationManager;
 import org.springframework.security.authentication.BadCredentialsException;
 import org.springframework.web.bind.annotation.*;
-import org.springframework.web.client.RestTemplate;
+
 
 import javax.validation.Valid;
 import java.security.Principal;
@@ -33,8 +33,7 @@ public class AuthenticationController {
     private final CustomUserDetailsService customUserDetailsService;
 
     private final JwtTokenUtils jwtTokenUtils;
-
-    private final RestTemplate restTemplate = new RestTemplate();
+    
 
     public AuthenticationController(AuthenticationManager authenticationManager, CustomUserDetailsService customUserDetailsService,
                                     JwtTokenUtils jwtTokenUtils) {

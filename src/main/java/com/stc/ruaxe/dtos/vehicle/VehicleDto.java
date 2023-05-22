@@ -1,4 +1,4 @@
-package com.stc.ruaxe.dtos.dichvu;
+package com.stc.ruaxe.dtos.vehicle;
 
 import lombok.AllArgsConstructor;
 import lombok.Getter;
@@ -10,12 +10,10 @@ import lombok.Setter;
 @Setter
 @NoArgsConstructor
 @AllArgsConstructor
-public class DichVuDto {
-    private String maDichVu;
+public class VehicleDto {
 
-    private String tenDichVu;
-
-    private String noiDung;
+    private String vehicleid;
+    private String name;
 
     //private List<String> giaDichVus = new ArrayList<>();
 }

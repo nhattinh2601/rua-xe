@@ -1,5 +1,6 @@
 package com.stc.ruaxe.dtos.user;
 
+import com.stc.ruaxe.entities.Vehicle;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
@@ -14,6 +15,10 @@ import java.util.List;
 @NoArgsConstructor
 @AllArgsConstructor
 public class UserDto {
+
+    private  String userid;
+
+    private List<Vehicle> vehicle;
     private String email;
 
     private String password;

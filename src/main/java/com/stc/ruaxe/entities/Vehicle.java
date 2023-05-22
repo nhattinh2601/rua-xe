@@ -12,15 +12,16 @@ import org.springframework.data.mongodb.core.mapping.Document;
 @Setter
 @NoArgsConstructor
 @AllArgsConstructor
-@Document(collection = "loai-thu-cung")
-public class LoaiThuCung {
+@Document(collection = "vehicle")
+public class Vehicle {
     @Id
     private String id;
 
-    // mã không được trùng
-    private String maLoaiThuCung;
 
-    private String tenLoaiThuCung;
+    private String name;
 
-    private boolean trangThai = true;
+    public Vehicle(String name) {
+        this.name = name;
+    }
+
 }
